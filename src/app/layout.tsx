@@ -1,6 +1,9 @@
-import "@/config/styles/globals.scss";
+import "@styles/globals.scss";
 import { monserrat } from "@/config/ui/font.ui";
+import styles from "@styles/layouts/principal-layout.module.scss";
+import logo from "@/assets/images/instaleap-logo.webp";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,8 +16,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${monserrat.className}`}>{children}</body>
+    <html lang="es">
+      <body className={`${monserrat.className}`}>
+        <div className={styles.layout}>
+          <div className={styles.sideMenu}>
+            <Image src={logo} className={styles.logo} alt="Instaleap" />
+          </div>
+          <main className={styles.content}>{children}</main>
+        </div>
+      </body>
     </html>
   );
 }
