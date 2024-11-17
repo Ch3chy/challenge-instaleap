@@ -1,0 +1,45 @@
+@import "@styles/mixins/responsive.scss";
+
+.items {
+  display: flex;
+  gap: 2rem;
+
+  @include responsive(lg) {
+    flex-direction: column;
+  }
+}
+
+.link {
+  align-items: center;
+  color: var(--Color-gray-500);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  text-decoration: none;
+  .icon {
+    font-size: 2.5em;
+  }
+  &.item__active {
+    color: var(--Color-green-500);
+  }
+  &:hover {
+    &:not(.item__active) {
+      color: var(--Color-black);
+    }
+  }
+
+  @include responsive(lg) {
+    $size: 72px;
+    border-radius: 0.75rem;
+    gap: 0.25em;
+    height: $size;
+    justify-content: center;
+    width: $size;
+    &.item__active {
+      background-color: var(--Color-green-500);
+      box-shadow: 0 0 0.5rem 0 var(--Color-green-500);
+      color: var(--Color-white);
+    }
+  }
+}
