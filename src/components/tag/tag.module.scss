@@ -1,0 +1,20 @@
+.tag {
+  align-items: center;
+  background-color: var(--Color-gray-600);
+  border-radius: 0.25rem;
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: 600;
+  gap: 0.25rem;
+  padding: 0.125rem 0.5rem;
+
+  &.tag__success {
+    background-color: var(--Color-green-700);
+  }
+  &.tag__info {
+    background-color: var(--Color-blue-700);
+  }
+  &.tag__warning {
+    background-color: var(--Color-yellow-700);
+  }
+}
