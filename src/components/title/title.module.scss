@@ -1,0 +1,19 @@
+@import "@styles/mixins/responsive.scss";
+
+.titleContainer {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  
+  @include responsive(lg) {
+    font-size: 2rem;
+  }
+}
+
+.title {
+  color: var(--Color-Black);
+  font-size: 1em;
+  font-weight: 300;
+}
