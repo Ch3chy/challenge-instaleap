@@ -1,0 +1,17 @@
+.order {
+  font-size: 0.75rem;
+}
+
+.table {
+  width: 100%;
+  th {
+    text-align: left;
+  }
+  td {
+    padding: 0.125rem 0;
+  }
+  .quantity,
+  .price {
+    text-align: right;
+  }
+}

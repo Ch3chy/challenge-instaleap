@@ -46,5 +46,8 @@
 .content {
   flex: 1;
   overflow: auto;
-  padding: 3rem;
+  padding: 1rem;
+  @include responsive(lg) {
+    padding: 3rem;
+  }
 }
