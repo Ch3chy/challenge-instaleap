@@ -1,0 +1,38 @@
+.status {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.statusDetail {
+  align-items: center;
+  color: var(--Color-gray-500);
+  display: flex;
+  font-size: 0.75rem;
+  gap: 0.25rem;
+  &::before {
+    $size: 8px;
+    background-color: var(--Color-gray-500);
+    border-radius: 50%;
+    content: "";
+    display: flex;
+    height: $size;
+    width: $size;
+  }
+  &.statusDetail__success {
+    &::before {
+      background-color: var(--Color-green-500);
+    }
+  }
+  &.statusDetail__warning {
+    &::before {
+      background-color: var(--Color-yellow-700);
+    }
+  }
+  &.statusDetail__info {
+    &::before {
+      background-color: var(--Color-blue-700);
+    }
+  }
+}

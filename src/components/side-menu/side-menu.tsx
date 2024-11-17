@@ -7,7 +7,7 @@ import NavLink from "../nav-link";
 
 const SideMenu: FC<SideMenuProps> = ({ items, className }) => {
   return (
-    <nav className={`${styles.sideMenu} ${className}`}>
+    <nav className={`${styles.sideMenu} ${className || ""}`}>
       <ul className={styles.items}>
         {items.map((item, index) => (
           <li key={`side-menu-item-${index}`} className={styles.item}>
