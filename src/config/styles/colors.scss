@@ -1,0 +1,13 @@
+@import "./variables/colors.scss";
+
+:root {
+  @each $color, $value in $colors {
+    @if is-map($value) {
+      @each $variant, $valueVariant in $value {
+        --Color-#{$color}-#{$variant}: #{$valueVariant};
+      }
+    } @else {
+      --Color-#{$color}: #{$value};
+    }
+  }
+}
