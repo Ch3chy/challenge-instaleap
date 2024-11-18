@@ -4,6 +4,7 @@ import OrderStatus from "../order-status";
 import OrderDate from "../order-date";
 import OrderDetail from "../order-detail";
 import Button from "@/components/button";
+import Link from "next/link";
 
 type TicketOrderProps = {
   className?: string;
@@ -33,7 +34,11 @@ const TicketOrder: FC<TicketOrderProps> = ({ className }) => {
         <span className={styles.total}>$57.800</span>
       </div>
       <footer className={styles.footer}>
-        <Button appearance="success" fullWidth>Seleccionar</Button>
+        <Link href={"/orders/123"}>
+          <Button appearance="success" fullWidth>
+            Seleccionar
+          </Button>
+        </Link>
       </footer>
     </article>
   );
