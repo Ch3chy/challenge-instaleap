@@ -9,6 +9,21 @@
 }
 
 .market {
-    color: var(--Color-white);
-    font-size: 2em;
+  color: var(--Color-white);
+  font-size: 2em;
+}
+
+.marketCenter {
+  align-items: center;
+  background-color: #000;
+  border-radius: 50%;
+  color: var(--Color-green-500);
+  display: flex;
+  font-size: 4em;
+  justify-content: center;
+  height: 52px;
+  left: 0;
+  position: "absolute";
+  top: 0;
+  width: 52px;
 }

@@ -3,7 +3,11 @@
     "id": 1023,
     "customer": {
       "id": 785,
-      "name": "Sergio Alfonso"
+      "name": "Sergio Alfonso",
+      "coordinates": {
+        "lat": 4.6834853,
+        "lng": -74.1239556
+      }
     },
     "totalOrder": "$25.000",
     "products": [
@@ -24,7 +28,11 @@
     "id": 4532,
     "customer": {
       "id": 1123,
-      "name": "Ana María"
+      "name": "Ana María",
+      "coordinates": {
+        "lat": 4.612548,
+        "lng": -74.062413
+      }
     },
     "totalOrder": "$40.000",
     "products": [
@@ -51,7 +59,11 @@
     "id": 8394,
     "customer": {
       "id": 5472,
-      "name": "Carlos López"
+      "name": "Carlos López",
+      "coordinates": {
+        "lat": 4.628991,
+        "lng": -74.071232
+      }
     },
     "totalOrder": "$15.000",
     "products": [
@@ -72,7 +84,11 @@
     "id": 6237,
     "customer": {
       "id": 1672,
-      "name": "Isabel Gómez"
+      "name": "Isabel Gómez",
+      "coordinates": {
+        "lat": 4.601235,
+        "lng": -74.085742
+      }
     },
     "totalOrder": "$58.000",
     "products": [
@@ -99,7 +115,11 @@
     "id": 1821,
     "customer": {
       "id": 7421,
-      "name": "Pedro Martínez"
+      "name": "Pedro Martínez",
+      "coordinates": {
+        "lat": 4.639117,
+        "lng": -74.073308
+      }
     },
     "totalOrder": "$72.000",
     "products": [
@@ -132,7 +152,11 @@
     "id": 2759,
     "customer": {
       "id": 1947,
-      "name": "Lucía Rodríguez"
+      "name": "Lucía Rodríguez",
+      "coordinates": {
+        "lat": 4.652898,
+        "lng": -74.067832
+      }
     },
     "totalOrder": "$30.000",
     "products": [
@@ -159,7 +183,11 @@
     "id": 6472,
     "customer": {
       "id": 3745,
-      "name": "Raúl Pérez"
+      "name": "Raúl Pérez",
+      "coordinates": {
+        "lat": 4.693247,
+        "lng": -74.084612
+      }
     },
     "totalOrder": "$50.000",
     "products": [
