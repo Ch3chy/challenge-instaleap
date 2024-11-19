@@ -8,6 +8,8 @@ export type Store = {
   coordinates: Coordinates;
   nextDeliveryTime: DeliveryTime;
   ordersIds: number[];
+
+  distance?: number;
 };
 
 export type DeliveryTime = {

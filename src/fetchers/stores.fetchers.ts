@@ -1,5 +1,4 @@
 import { QUERY_PARAMS_API_STORES } from "@/constants/query-params.constants";
-import { orderResponseToOrders } from "@/modules/orders/mappers/orders.mappers";
 import { Store, StoresPayload } from "@/modules/orders/types/stores.types";
 import { getServiceUrl } from "@/utils/env.utils";
 
