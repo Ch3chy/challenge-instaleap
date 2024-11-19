@@ -2,13 +2,24 @@ import { FC } from "react";
 import styles from "./store.module.scss";
 import Tag from "@/components/tag";
 import { Timer } from "@phosphor-icons/react/dist/ssr";
+import { Store as StoreType } from "../../types/stores.types";
+import { getTextInitials } from "@/utils/strings.utils";
+import dayjs from "dayjs";
 
 type StoreProps = {
+  store: StoreType;
   name?: string;
   className?: string;
 };
 
-const Store: FC<StoreProps> = ({ name, className }) => {
+const Store: FC<StoreProps> = ({ store, name, className }) => {
+  const avatarText = getTextInitials(store.name);
+
+  const times = {
+    from: dayjs(`1/1/1 ${store.nextDeliveryTime.from}`).format("hh:mm a"),
+    to: dayjs(`1/1/1 ${store.nextDeliveryTime.to}`).format("hh:mm a"),
+  };
+
   return (
     <article className={`${styles.store} ${className || ""}`}>
       {name && (
@@ -16,17 +27,17 @@ const Store: FC<StoreProps> = ({ name, className }) => {
           <input name={name} type="radio" className={styles.radio} />
         </span>
       )}
-      <div className={styles.avatar}>TN</div>
+      <div className={styles.avatar}>{avatarText}</div>
       <div className={styles.info}>
         <header className={styles.header}>
-          <h2 className={styles.title}>Terminal Norte</h2>
-          <Tag type="info">
-            <Timer /> Abierto
+          <h2 className={styles.title}>{store.name}</h2>
+          <Tag type={store.isOpen ? "info" : "warning"}>
+            <Timer /> {store.isOpen ? "Abierto" : "Cerrado"}
           </Tag>
         </header>
-        <div className={styles.address}>Carrera 35 #123-56</div>
+        <div className={styles.address}>{store.address}</div>
         <div className={styles.hours}>
-          <strong>Entrega:</strong> 8:00 am a 8:59 am
+          <strong>Entrega:</strong> {times.from} a {times.to}
         </div>
       </div>
     </article>

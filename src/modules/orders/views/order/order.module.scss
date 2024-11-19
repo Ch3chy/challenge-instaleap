@@ -59,6 +59,7 @@
     overflow-y: auto;
   }
   @include responsive(lg) {
+    max-height: calc(100vh - 228px);
     height: 100%;
   }
 }

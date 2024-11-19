@@ -6,6 +6,7 @@ import OrderDetail from "../order-detail";
 import Button from "@/components/button";
 import Link from "next/link";
 import { Order } from "../../types/orders.types";
+import { getTextInitials } from "@/utils/strings.utils";
 
 type TicketOrderProps = {
   order: Order;
@@ -13,11 +14,7 @@ type TicketOrderProps = {
 };
 
 const TicketOrder: FC<TicketOrderProps> = ({ order, className }) => {
-  const nameSplited = order.customer.name.split(" ");
-  const avatarText =
-    nameSplited.length >= 2
-      ? `${nameSplited[0][0]}${nameSplited[1][0]}`
-      : nameSplited.slice(0, 2);
+  const avatarText = getTextInitials(order.customer.name);
 
   return (
     <article className={`${styles.ticket} ${className || ""}`}>

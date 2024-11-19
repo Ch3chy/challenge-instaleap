@@ -1,0 +1,467 @@
+[
+  {
+    "id": 2984,
+    "name": "Tiendas Olímpica",
+    "address": "Carrera 15 # 74-48",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.627957,
+      "lng": -74.063803
+    },
+    "nextDeliveryTime": {
+      "from": "10:00",
+      "to": "12:00"
+    },
+    "ordersIds": [1023, 8394]
+  },
+  {
+    "id": 7126,
+    "name": "Éxito",
+    "address": "Avenida Ciudad de Cali # 51-03",
+    "isOpen": false,
+    "coordinates": {
+      "lat": 4.655891,
+      "lng": -74.121362
+    },
+    "nextDeliveryTime": {
+      "from": "12:30",
+      "to": "14:00"
+    },
+    "ordersIds": [4532]
+  },
+  {
+    "id": 5943,
+    "name": "Carulla",
+    "address": "Carrera 7 # 66-25",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.613789,
+      "lng": -74.070312
+    },
+    "nextDeliveryTime": {
+      "from": "09:45",
+      "to": "11:30"
+    },
+    "ordersIds": [1821, 6472, 2759]
+  },
+  {
+    "id": 4905,
+    "name": "Jumbo",
+    "address": "Calle 100 # 19-01",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.700801,
+      "lng": -74.047481
+    },
+    "nextDeliveryTime": {
+      "from": "13:00",
+      "to": "15:00"
+    },
+    "ordersIds": [1023, 4532, 8394]
+  },
+  {
+    "id": 1207,
+    "name": "Makro",
+    "address": "Carrera 68D # 17A-30",
+    "isOpen": false,
+    "coordinates": {
+      "lat": 4.653198,
+      "lng": -74.128732
+    },
+    "nextDeliveryTime": {
+      "from": "15:30",
+      "to": "17:00"
+    },
+    "ordersIds": [6237]
+  },
+  {
+    "id": 3842,
+    "name": "Surtimax",
+    "address": "Avenida Boyacá # 22-54",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.633333,
+      "lng": -74.122
+    },
+    "nextDeliveryTime": {
+      "from": "08:00",
+      "to": "10:00"
+    },
+    "ordersIds": [6472, 8394, 1821]
+  },
+  {
+    "id": 2691,
+    "name": "La 14",
+    "address": "Carrera 32 # 72-59",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.63541,
+      "lng": -74.079476
+    },
+    "nextDeliveryTime": {
+      "from": "11:00",
+      "to": "13:30"
+    },
+    "ordersIds": [4532, 2759]
+  },
+  {
+    "id": 7410,
+    "name": "Alkosto",
+    "address": "Calle 53 # 40-10",
+    "isOpen": false,
+    "coordinates": {
+      "lat": 4.665634,
+      "lng": -74.091158
+    },
+    "nextDeliveryTime": {
+      "from": "14:00",
+      "to": "16:00"
+    },
+    "ordersIds": [8394]
+  },
+  {
+    "id": 8462,
+    "name": "Supermercado Colsubsidio",
+    "address": "Calle 80 # 50-10",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.666856,
+      "lng": -74.114597
+    },
+    "nextDeliveryTime": {
+      "from": "10:30",
+      "to": "12:30"
+    },
+    "ordersIds": [1023, 6472, 2759]
+  },
+  {
+    "id": 3569,
+    "name": "Falabella",
+    "address": "Calle 140 # 11A-15",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.727953,
+      "lng": -74.050577
+    },
+    "nextDeliveryTime": {
+      "from": "09:00",
+      "to": "11:00"
+    },
+    "ordersIds": [4532, 1821]
+  },
+  {
+    "id": 1543,
+    "name": "Tiendas Olímpica",
+    "address": "Calle 45 # 67-90",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.563439,
+      "lng": -74.05089
+    },
+    "nextDeliveryTime": {
+      "from": "11:00",
+      "to": "13:00"
+    },
+    "ordersIds": [2759]
+  },
+  {
+    "id": 2987,
+    "name": "Éxito",
+    "address": "Carrera 18 # 54-12",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.618233,
+      "lng": -74.089231
+    },
+    "nextDeliveryTime": {
+      "from": "14:00",
+      "to": "16:00"
+    },
+    "ordersIds": [1023, 1821, 2759]
+  },
+  {
+    "id": 3021,
+    "name": "Carulla",
+    "address": "Calle 80 # 33-28",
+    "isOpen": false,
+    "coordinates": {
+      "lat": 4.640482,
+      "lng": -74.080951
+    },
+    "nextDeliveryTime": {
+      "from": "10:00",
+      "to": "12:00"
+    },
+    "ordersIds": [4532, 8394]
+  },
+  {
+    "id": 4536,
+    "name": "Jumbo",
+    "address": "Calle 50 # 26-32",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.687926,
+      "lng": -74.078435
+    },
+    "nextDeliveryTime": {
+      "from": "09:30",
+      "to": "11:30"
+    },
+    "ordersIds": [6472, 6237]
+  },
+  {
+    "id": 6042,
+    "name": "Makro",
+    "address": "Calle 36 # 19-01",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.59105,
+      "lng": -74.098145
+    },
+    "nextDeliveryTime": {
+      "from": "08:00",
+      "to": "10:00"
+    },
+    "ordersIds": [1821]
+  },
+  {
+    "id": 1298,
+    "name": "Surtimax",
+    "address": "Carrera 23 # 52-19",
+    "isOpen": false,
+    "coordinates": {
+      "lat": 4.710432,
+      "lng": -74.064375
+    },
+    "nextDeliveryTime": {
+      "from": "13:00",
+      "to": "15:00"
+    },
+    "ordersIds": [1023, 8394, 2759]
+  },
+  {
+    "id": 7812,
+    "name": "La 14",
+    "address": "Carrera 34 # 67-40",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.678932,
+      "lng": -74.074321
+    },
+    "nextDeliveryTime": {
+      "from": "10:30",
+      "to": "12:30"
+    },
+    "ordersIds": [6237]
+  },
+  {
+    "id": 9821,
+    "name": "Alkosto",
+    "address": "Calle 19 # 49-02",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.652238,
+      "lng": -74.09642
+    },
+    "nextDeliveryTime": {
+      "from": "14:00",
+      "to": "16:00"
+    },
+    "ordersIds": [1023, 6472]
+  },
+  {
+    "id": 7625,
+    "name": "Supermercado Colsubsidio",
+    "address": "Carrera 9 # 19-56",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.665784,
+      "lng": -74.089624
+    },
+    "nextDeliveryTime": {
+      "from": "08:00",
+      "to": "10:00"
+    },
+    "ordersIds": [8394, 2759]
+  },
+  {
+    "id": 2354,
+    "name": "Falabella",
+    "address": "Calle 145 # 78-19",
+    "isOpen": false,
+    "coordinates": {
+      "lat": 4.726021,
+      "lng": -74.089215
+    },
+    "nextDeliveryTime": {
+      "from": "11:00",
+      "to": "13:00"
+    },
+    "ordersIds": [1821]
+  },
+  {
+    "id": 3695,
+    "name": "Tiendas Olímpica",
+    "address": "Calle 77 # 53-14",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.691992,
+      "lng": -74.063022
+    },
+    "nextDeliveryTime": {
+      "from": "15:30",
+      "to": "17:00"
+    },
+    "ordersIds": [4532, 8394, 2759]
+  },
+  {
+    "id": 4538,
+    "name": "Éxito",
+    "address": "Avenida Boyacá # 77-34",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.688046,
+      "lng": -74.056222
+    },
+    "nextDeliveryTime": {
+      "from": "13:00",
+      "to": "15:00"
+    },
+    "ordersIds": [6472, 6237]
+  },
+  {
+    "id": 9536,
+    "name": "Carulla",
+    "address": "Calle 72 # 15-12",
+    "isOpen": false,
+    "coordinates": {
+      "lat": 4.636854,
+      "lng": -74.105053
+    },
+    "nextDeliveryTime": {
+      "from": "16:00",
+      "to": "18:00"
+    },
+    "ordersIds": [2759]
+  },
+  {
+    "id": 6532,
+    "name": "Jumbo",
+    "address": "Calle 16 # 12-04",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.631208,
+      "lng": -74.074688
+    },
+    "nextDeliveryTime": {
+      "from": "09:30",
+      "to": "11:00"
+    },
+    "ordersIds": [1023, 1821, 6472]
+  },
+  {
+    "id": 7235,
+    "name": "Makro",
+    "address": "Carrera 50 # 26-23",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.682612,
+      "lng": -74.090914
+    },
+    "nextDeliveryTime": {
+      "from": "10:30",
+      "to": "12:30"
+    },
+    "ordersIds": [4532, 8394]
+  },
+  {
+    "id": 8136,
+    "name": "Surtimax",
+    "address": "Calle 14 # 41-21",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.671328,
+      "lng": -74.076537
+    },
+    "nextDeliveryTime": {
+      "from": "11:00",
+      "to": "13:30"
+    },
+    "ordersIds": [1023, 6237]
+  },
+  {
+    "id": 1495,
+    "name": "La 14",
+    "address": "Carrera 20 # 70-12",
+    "isOpen": false,
+    "coordinates": {
+      "lat": 4.699752,
+      "lng": -74.084951
+    },
+    "nextDeliveryTime": {
+      "from": "13:00",
+      "to": "15:00"
+    },
+    "ordersIds": [1821]
+  },
+  {
+    "id": 5023,
+    "name": "Alkosto",
+    "address": "Calle 95 # 53-27",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.64308,
+      "lng": -74.053524
+    },
+    "nextDeliveryTime": {
+      "from": "10:00",
+      "to": "12:00"
+    },
+    "ordersIds": [2759, 6472]
+  },
+  {
+    "id": 2189,
+    "name": "Supermercado Colsubsidio",
+    "address": "Carrera 17 # 33-15",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.661366,
+      "lng": -74.094316
+    },
+    "nextDeliveryTime": {
+      "from": "14:00",
+      "to": "16:00"
+    },
+    "ordersIds": [1023, 4532, 2759]
+  },
+  {
+    "id": 1169,
+    "name": "Falabella",
+    "address": "Calle 78 # 41-32",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.688533,
+      "lng": -74.071858
+    },
+    "nextDeliveryTime": {
+      "from": "12:30",
+      "to": "14:00"
+    },
+    "ordersIds": [8394, 6237]
+  },
+  {
+    "id": 9403,
+    "name": "Tiendas Olímpica",
+    "address": "Calle 44 # 56-01",
+    "isOpen": true,
+    "coordinates": {
+      "lat": 4.61524,
+      "lng": -74.065896
+    },
+    "nextDeliveryTime": {
+      "from": "09:00",
+      "to": "11:00"
+    },
+    "ordersIds": [1023]
+  }
+]
