@@ -7,7 +7,9 @@ export const fetchOrder = (order: number): Promise<Order> => {
 
   const serviceUrl = `${getServiceUrl()}/${URL_SERVICE}/${order}`;
 
-  return fetch(serviceUrl).then((res) => res.json());
+  return fetch(serviceUrl)
+    .then((res) => res.json())
+    .catch(() => null);
 };
 
 export const fetchOrders = (): Promise<Order[]> => {
@@ -17,5 +19,6 @@ export const fetchOrders = (): Promise<Order[]> => {
 
   return fetch(serviceUrl)
     .then((res) => res.json())
-    .then((data) => orderResponseToOrders(data));
+    .then((data) => orderResponseToOrders(data))
+    .catch(() => []);
 };
