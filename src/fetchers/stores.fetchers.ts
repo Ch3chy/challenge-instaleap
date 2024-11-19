@@ -11,5 +11,7 @@ export const fetchStores = (payload: StoresPayload): Promise<Store[]> => {
       : {}),
   }).toString()}`;
 
-  return fetch(serviceUrl).then((res) => res.json());
+  return fetch(serviceUrl)
+    .then((res) => res.json())
+    .catch(() => []);
 };
