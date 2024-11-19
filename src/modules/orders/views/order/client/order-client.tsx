@@ -18,10 +18,17 @@ type OrderClientProps = {
 const OrderClient: FC<OrderClientProps> = ({ order, stores }) => {
   const [store, setStore] = useState<StoreType>();
   const [hideClosed, setHideClosed] = useState(false);
+  const [sort, setSort] = useState(false);
 
   const filterStores = useMemo(() => {
-    return stores.filter((store) => (hideClosed ? store.isOpen : true));
-  }, [stores, hideClosed]);
+    const _stores = stores.filter((store) =>
+      hideClosed ? store.isOpen : true
+    );
+    if (!sort) return _stores;
+    return _stores.sort((a, b) =>
+      (a.distance || 0) > (b.distance || 0) ? 1 : -1
+    );
+  }, [stores, hideClosed, sort]);
 
   return (
     <div className={styles.orderLayout}>
@@ -30,7 +37,7 @@ const OrderClient: FC<OrderClientProps> = ({ order, stores }) => {
           <Toggle onChange={setHideClosed}>
             Abiertas <Timer />
           </Toggle>
-          <Toggle>
+          <Toggle onChange={setSort}>
             Mas cercanas <ArrowsDownUp weight="bold" />
           </Toggle>
         </div>
