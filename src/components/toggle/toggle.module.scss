@@ -1,0 +1,21 @@
+.toggle {
+  align-items: center;
+  background-color: var(--Color-gray-500);
+  border: 1px solid var(--Color-white);
+  border-radius: 0.5rem;
+  color: var(--Color-white);
+  cursor: pointer;
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: 600;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  &:has(.checkbox:checked) {
+    background-color: var(--Color-green-500);
+  }
+}

@@ -1,0 +1,13 @@
+@import "./mixins/maps.scss";
+@import "./colors.scss";
+@import "./reset.scss";
+@import "./variables.scss";
+
+body {
+  background-color: var(--Color-gray-700);
+  font-weight: 300;
+}
+
+a {
+  color: var(--Color-green-500);
+}

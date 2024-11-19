@@ -1,0 +1,10 @@
+@import "./variables/breakpoints.scss";
+
+:root {
+  @each $size, $values in $breakpoints {
+    @if map-has-key($values, min) {
+      $size-min: map-get($values, min);
+      --Grid-#{$size}: #{$size-min};
+    }
+  }
+}
