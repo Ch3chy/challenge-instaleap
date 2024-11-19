@@ -22,7 +22,7 @@ const NavLink: FC<NavLinkProps> = ({
   const hrefString = (typeof href === "string" ? href : href.pathname) || "";
 
   const isActive =
-    pathname.endsWith(hrefString) ||
+    (pathname.includes(hrefString) && hrefString !== "/") ||
     (hrefString.includes(pathname) && pathname !== "/");
   const newClassName = `${isActive ? activeClassName : ""} ${className || ""}`;
 
