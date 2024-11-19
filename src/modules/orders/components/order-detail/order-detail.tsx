@@ -1,17 +1,13 @@
 import { FC } from "react";
 import styles from "./order-detail.module.scss";
+import { Product } from "../../types/products.types";
 
 type OrderDetailProps = {
+  products: Product[];
   className?: string;
 };
 
-const OrderDetail: FC<OrderDetailProps> = ({ className }) => {
-  const items = [
-    { name: "Producto #1", quantity: "2", price: "$25.000" },
-    { name: "Producto pequeño", quantity: "1", price: "$12.300" },
-    { name: "Producto mentiritas", quantity: "2", price: "$22.500" },
-  ];
-
+const OrderDetail: FC<OrderDetailProps> = ({ products, className }) => {
   return (
     <div className={`${styles.order} ${className || ""}`}>
       <table className={styles.table}>
@@ -23,11 +19,11 @@ const OrderDetail: FC<OrderDetailProps> = ({ className }) => {
           </tr>
         </thead>
         <tbody>
-          {items.map((item, index) => (
-            <tr key={`order-item-${index}`}>
-              <td>{item.name}</td>
-              <td className={styles.quantity}>{item.quantity}</td>
-              <td className={styles.price}>{item.price}</td>
+          {products.map((product) => (
+            <tr key={`order-item-${product.id}`}>
+              <td>{product.name}</td>
+              <td className={styles.quantity}>{product.quantity}</td>
+              <td className={styles.price}>{product.price}</td>
             </tr>
           ))}
         </tbody>

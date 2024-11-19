@@ -1,0 +1,185 @@
+[
+  {
+    "id": 1023,
+    "customer": {
+      "id": 785,
+      "name": "Sergio Alfonso"
+    },
+    "totalOrder": "$25.000",
+    "products": [
+      {
+        "id": 2948,
+        "name": "Tomates maduros",
+        "quantity": 2,
+        "price": "$25.000"
+      }
+    ],
+    "status": {
+      "id": "PROGRESS",
+      "subStatus": "READY_TO_SEND"
+    },
+    "createdAt": "2024-11-19T04:19:49.255Z"
+  },
+  {
+    "id": 4532,
+    "customer": {
+      "id": 1123,
+      "name": "Ana María"
+    },
+    "totalOrder": "$40.000",
+    "products": [
+      {
+        "id": 9982,
+        "name": "Pimientos rojos",
+        "quantity": 3,
+        "price": "$13.333"
+      },
+      {
+        "id": 8771,
+        "name": "Cebollas moradas",
+        "quantity": 1,
+        "price": "$10.000"
+      }
+    ],
+    "status": {
+      "id": "COMPLETED",
+      "subStatus": "DELIVERED"
+    },
+    "createdAt": "2024-11-18T10:05:17.245Z"
+  },
+  {
+    "id": 8394,
+    "customer": {
+      "id": 5472,
+      "name": "Carlos López"
+    },
+    "totalOrder": "$15.000",
+    "products": [
+      {
+        "id": 4917,
+        "name": "Aguacates",
+        "quantity": 5,
+        "price": "$3.000"
+      }
+    ],
+    "status": {
+      "id": "CANCELLED",
+      "subStatus": "USER_CANCELLED"
+    },
+    "createdAt": "2024-11-17T15:30:05.345Z"
+  },
+  {
+    "id": 6237,
+    "customer": {
+      "id": 1672,
+      "name": "Isabel Gómez"
+    },
+    "totalOrder": "$58.000",
+    "products": [
+      {
+        "id": 5649,
+        "name": "Plátanos",
+        "quantity": 6,
+        "price": "$4.000"
+      },
+      {
+        "id": 6724,
+        "name": "Lechuga romana",
+        "quantity": 2,
+        "price": "$5.000"
+      }
+    ],
+    "status": {
+      "id": "PROGRESS",
+      "subStatus": "PREPARING"
+    },
+    "createdAt": "2024-11-19T11:15:25.512Z"
+  },
+  {
+    "id": 1821,
+    "customer": {
+      "id": 7421,
+      "name": "Pedro Martínez"
+    },
+    "totalOrder": "$72.000",
+    "products": [
+      {
+        "id": 3095,
+        "name": "Zanahorias",
+        "quantity": 10,
+        "price": "$2.000"
+      },
+      {
+        "id": 8593,
+        "name": "Pepinos",
+        "quantity": 5,
+        "price": "$3.500"
+      },
+      {
+        "id": 4016,
+        "name": "Tomates cherry",
+        "quantity": 3,
+        "price": "$6.500"
+      }
+    ],
+    "status": {
+      "id": "SHIPPED",
+      "subStatus": "IN_TRANSIT"
+    },
+    "createdAt": "2024-11-18T08:45:30.111Z"
+  },
+  {
+    "id": 2759,
+    "customer": {
+      "id": 1947,
+      "name": "Lucía Rodríguez"
+    },
+    "totalOrder": "$30.000",
+    "products": [
+      {
+        "id": 2456,
+        "name": "Espinacas",
+        "quantity": 3,
+        "price": "$3.500"
+      },
+      {
+        "id": 8330,
+        "name": "Acelgas",
+        "quantity": 4,
+        "price": "$4.000"
+      }
+    ],
+    "status": {
+      "id": "COMPLETED",
+      "subStatus": "DELIVERED"
+    },
+    "createdAt": "2024-11-17T16:00:50.134Z"
+  },
+  {
+    "id": 6472,
+    "customer": {
+      "id": 3745,
+      "name": "Raúl Pérez"
+    },
+    "totalOrder": "$50.000",
+    "products": [
+      {
+        "id": 6742,
+        "name": "Manzanas",
+        "quantity": 8,
+        "price": "$6.250"
+      },
+      {
+        "id": 4821,
+        "name": "Peras",
+        "quantity": 6,
+        "price": "$4.000"
+      }
+    ],
+    "status": {
+      "id": "PROGRESS",
+      "subStatus": "WAITING_FOR_PAYMENT"
+    },
+    "createdAt": "2024-11-19T09:20:10.725Z"
+  }
+]
