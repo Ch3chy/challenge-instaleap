@@ -1,6 +1,6 @@
+import { getServiceUrl } from "@/config/utils/env.utils";
 import { QUERY_PARAMS_API_STORES } from "@/constants/query-params.constants";
 import { Store, StoresPayload } from "@/modules/orders/types/stores.types";
-import { getServiceUrl } from "@/utils/env.utils";
 
 export const fetchStores = (payload: StoresPayload): Promise<Store[]> => {
   const URL_SERVICE = `stores`;
