@@ -47,7 +47,7 @@
 .avatar {
   $size: 80px;
   align-items: center;
-  background-color: var(--Color-yellow-700);
+  background-color: var(--Color-green-700);
   border-radius: 0.75rem;
   display: flex;
   font-size: 2rem;
@@ -57,10 +57,12 @@
 }
 
 .header {
+  align-items: flex-start;
   display: flex;
   justify-content: space-between;
   .title {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.25em;
   }
 }
 

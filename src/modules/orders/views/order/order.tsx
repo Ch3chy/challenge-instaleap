@@ -5,8 +5,19 @@ import Toggle from "@/components/toggle";
 import { ArrowsDownUp, Timer } from "@phosphor-icons/react/dist/ssr";
 import Store from "../../components/store";
 import GridStores from "../../components/grid-stores";
+import { fetchStores } from "@/fetchers/stores.fetchers";
 
-export default function Order() {
+type OrderProps = {
+  params: { orderId: string };
+};
+
+export default async function Order(props: Readonly<OrderProps>) {
+  const {
+    params: { orderId },
+  } = props;
+
+  const stores = await fetchStores({ orderId });
+
   return (
     <section className={styles.order}>
       <Title>
@@ -24,16 +35,14 @@ export default function Order() {
           </div>
           <div className={styles.list}>
             <GridStores className={styles.listGrid}>
-              <Store name="tienda" />
-              <Store name="tienda" />
-              <Store name="tienda" />
-              <Store name="tienda" />
-              <Store name="tienda" />
+              {stores.map((store) => (
+                <Store key={`store-${store.id}`} store={store} name="tienda" />
+              ))}
             </GridStores>
           </div>
         </div>
         <div className={styles.map}>
-          <MapStores className={styles.mapStores} />
+          <MapStores stores={stores} className={styles.mapStores} />
         </div>
       </div>
     </section>
