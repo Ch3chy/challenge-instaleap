@@ -33,7 +33,7 @@ const MapStores: FC<MapStoresProps> = ({
       if (map && store) {
         map.setCenter(store.coordinates);
       }
-    }, [map, store]);
+    }, [map]);
 
     return null;
   };

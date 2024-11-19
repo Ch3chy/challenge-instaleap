@@ -9,7 +9,7 @@ type ToggleProps = {
 
 const Toggle: FC<ToggleProps> = ({ children, className, onChange }) => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onChange && onChange(!!e.target.checked);
+    return onChange && onChange(e.target.checked);
   };
 
   return (

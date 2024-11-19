@@ -19,9 +19,9 @@ export const getDistanceBetweenCoordinates = (
   const diffLngs = lng2 - lng1;
   const diffLats = lat2 - lat1;
 
-  let a =
+  const a =
     Math.pow(Math.sin(diffLats / 2.0), 2) +
     Math.cos(lat1) * Math.cos(lat2) * Math.pow(Math.sin(diffLngs / 2.0), 2);
-  let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   return RADIUS_EARTH_KMT * c;
 };
