@@ -2,7 +2,7 @@
 
 import { Order } from "@/modules/orders/types/orders.types";
 import { Store as StoreType } from "@/modules/orders/types/stores.types";
-import { FC, useState } from "react";
+import { FC, useMemo, useState } from "react";
 import styles from "./order-client.module.scss";
 import Toggle from "@/components/toggle";
 import { ArrowsDownUp, Timer } from "@phosphor-icons/react";
@@ -17,12 +17,17 @@ type OrderClientProps = {
 
 const OrderClient: FC<OrderClientProps> = ({ order, stores }) => {
   const [store, setStore] = useState<StoreType>();
+  const [hideClosed, setHideClosed] = useState(false);
+
+  const filterStores = useMemo(() => {
+    return stores.filter((store) => (hideClosed ? store.isOpen : true));
+  }, [stores, hideClosed]);
 
   return (
     <div className={styles.orderLayout}>
       <div className={styles.stores}>
         <div className={styles.filters}>
-          <Toggle>
+          <Toggle onChange={setHideClosed}>
             Abiertas <Timer />
           </Toggle>
           <Toggle>
@@ -31,7 +36,7 @@ const OrderClient: FC<OrderClientProps> = ({ order, stores }) => {
         </div>
         <div className={styles.list}>
           <GridStores className={styles.listGrid}>
-            {stores.map((store) => (
+            {filterStores.map((store) => (
               <Store
                 key={`store-${store.id}`}
                 store={store}
