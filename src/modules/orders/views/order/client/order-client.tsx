@@ -49,7 +49,7 @@ const OrderClient: FC<OrderClientProps> = ({ order, stores }) => {
                 store={store}
                 name="tienda"
                 onChange={(checked) => {
-                  checked && setStore(store);
+                  return checked && setStore(store);
                 }}
               />
             ))}

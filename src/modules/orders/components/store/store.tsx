@@ -22,7 +22,7 @@ const Store: FC<StoreProps> = ({ store, name, className, onChange }) => {
   };
 
   const handleChangeStore = (e: ChangeEvent<HTMLInputElement>) => {
-    onChange && onChange(!!e.target.checked);
+    return onChange && onChange(e.target.checked);
   };
 
   return (

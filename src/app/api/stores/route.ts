@@ -6,7 +6,7 @@ export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const orderId = searchParams.get(QUERY_PARAMS_API_STORES.ORDER_ID);
 
-  let stores = orderId
+  const stores = orderId
     ? (data as { ordersIds: number[] }[]).filter((item) =>
         item.ordersIds.includes(parseInt(orderId))
       )
